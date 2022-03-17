@@ -1,0 +1,40 @@
+{
+  "name": "webpack5-template",
+  "version": "1.0.0",
+  "description": "template for webpack5",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "webpack serve --open --config build/webpack.dev.js",
+    "start": "pnpm dev",
+    "build": "webpack --config build/webpack.prod.js --progress",
+    "profile": "webpack --profile --json > stats.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack5"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "unfound",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^6.7.0",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "fork-ts-checker-notifier-webpack-plugin": "^6.0.0",
+    "fork-ts-checker-webpack-plugin": "^7.2.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.2",
+    "webpack": "^5.70.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

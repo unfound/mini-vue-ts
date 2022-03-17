@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "module": "ES6",
+        "target": "ES5",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "lib": ["DOM", "ESNext"],
+        // "skipLibCheck": false,
+        "strict": true,
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.d.ts"
+    ]
+}
